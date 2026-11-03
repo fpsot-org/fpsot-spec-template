@@ -3,6 +3,18 @@
 This repository is the starting point for an FPSOT specification.
 Create a new repository from it, then replace this text.
 
+== Start a specification
+
+. Set `SPEC_PREFIX` in `.github/workflows/ci.yml` to the three-letter prefix of the requirement IDs.
+. Replace the titles in `spec/`, `docs/antora.yml`, `publiccode.yml`, `AGENTS.md`, `NOTICE` and `skill/SKILL.md`.
+. Replace the example requirement TPL-001 and the example row in `jurisdictions/baseline.yaml`.
+. List each spec page in `spec/<lang>/book.adoc`. The glossary stays the last include.
+
+Each page ends with a document history.
+Each guide page sets `:page-type:` to tutorial, how-to, reference or explanation.
+Write abbreviations and defined terms as `{abbr-…}` and `{term-…}` from the term base of `fpsot-spec-writing`.
+The continuous integration writes `_fpsot-terms.adoc`, the glossaries and the comparison pages. Git ignores them.
+
 == Implement this spec
 
 Read the normative text in `spec/en/` or `spec/fr/`.
@@ -21,7 +33,7 @@ They explain what the spec gives your organisation and how to require it.
 | Folder | Content
 
 | `spec/`
-| Normative text, in English and French.
+| Normative text, in English and French. `book.adoc` joins the pages into one book.
 
 | `docs/`
 | Guides, in the Antora folder layout.
@@ -36,7 +48,7 @@ They explain what the spec gives your organisation and how to require it.
 | PlantUML sources and their rendered SVG files.
 
 | `jurisdictions/`
-| Comparison data per jurisdiction.
+| Comparison data per jurisdiction. `baseline.yaml` lists the compared requirements.
 |===
 
 == Licence
