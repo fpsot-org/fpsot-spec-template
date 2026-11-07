@@ -1,5 +1,4 @@
 = Guide
-:translation-status: pending
 :page-type: explanation
 include::_fpsot-terms.adoc[]
 
