@@ -13,6 +13,9 @@ Create a new repository from it, then replace this text.
 Each page ends with a document history.
 Each guide page sets `:page-type:` to tutorial, how-to, reference or explanation.
 Write abbreviations and defined terms as `{abbr-…}` and `{term-…}` from the term base of `fpsot-spec-writing`.
+Write English in US spelling.
+Each page that cites outside sources ends with a References section, right before its document history.
+Each code block names its language, such as `[source,text]` or `[source,plantuml]`.
 The continuous integration writes `_fpsot-terms.adoc`, the glossaries and the comparison pages. Git ignores them.
 
 == Implement this spec
@@ -24,7 +27,7 @@ Check your implementation against every requirement.
 == Adopt this spec
 
 Read the guides in `docs/modules/en/pages/` or `docs/modules/fr/pages/`.
-They explain what the spec gives your organisation and how to require it.
+They explain what the spec gives your organization and how to require it.
 
 == Layout
 
@@ -51,7 +54,7 @@ They explain what the spec gives your organisation and how to require it.
 | Comparison data per jurisdiction. `baseline.yaml` lists the compared requirements.
 |===
 
-== Licence
+== License
 
 The specification is under the Community Specification License 1.0.
 Source code is under the Apache License 2.0.
